@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Coder</title>
+    <!-- favicom -->
+    <link rel="shortcut icon" href="../assets/images/favicom.jpg">
+    <!-- logos fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- archivo CSS -->
+    <link rel="stylesheet" href="../stylesheet/stylesheet.css">
+</head>
+<body>
+    <header class="complete__header">
+        <!-- crear logo -->
+        <a href="index.html"><img src="../assets/images/logo.jpg" alt="logo" class="header__logo"></a>
+        <nav class="header__menu">
+            <ul>
+                <li><a href="../index.html" class="header__menu1">Inicio</a></li>
+                <!-- En la parte de modelo cree la tabla que se solicita en el desafío -->
+                <li><a href="modelos.html" class="header__menu2">Modelos</a></li>
+                <li><a href="personalizaciones.html" class="header__menu3">Personalizaciones</a></li>
+                <li><a href="quienes_somos.html" class="header__menu4">¿Quiénes somos?</a></li>
+                <!-- El formulario está en la sección de consultas -->
+                <li><a href="consultas.html" class="header__menu5">Consultas</a></li> 
+            </ul>
+        </nav>
+        <button type="button" class="shopping__cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+    </header>
+    <main>
+        <!-- Formulario -->
+        <h1>¿Tenés alguna consulta? Preguntanos.</h1>
+        <form action="" method="post">
+            <label for="nombre_y_apellido">Nombre y Apellido</label>
+            <input type="text" id="nombre_y_apellido" placeholder="Juan Pérez">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="juanperez@gmail.com">
+            <label for="telefono">Teléfono</label>
+            <input type="number" id="teléfono" placeholder="1155555555">
+            <label for="estado_civil">Estado Civil</label>
+            <select name="estado_civil" id="estado_civil">
+                <option value="1">Soltero</option>
+                <option value="2">Casado</option>
+                <option value="3">Divorciado</option>
+            </select>
+            <p>¿Tenés registro para conducir motos?</p>
+            <label for="si">Sí</label>
+            <input type="radio" name="registro" value="Sí" id="si">
+            <label for="no">No</label>
+            <input type="radio" name="registro" value="No" id="no">
+            <p>¿Qué tipo de moto manejaste?</p>
+            <label for="sport">Sport</label>
+            <input type="checkbox" name="Sport" id="sport" value="Sport">
+            <label for="tour">Tour</label>
+            <input type="checkbox" name="Tour" id="tour" value="Tour">
+            <label for="roadster">Roadster</label>
+            <input type="checkbox" name="Roadster" id="roadster" value="Roadster">
+            <label for="adventure">Adventure</label>
+            <input type="checkbox" name="Adventure" id="adventure" value="Adventure">
+            <label for="ayuda">Consulta</label>
+            <textarea name="message" id="ayuda" cols="30" rows="10" placeholder="¿En qué te podemos ayuadar?"></textarea>
+            <input type="submit" value="Consultar">
+            <input type="reset" value="Modificar datos y consulta">
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <section>
+                <li><a href="../index.html" class="footer__menu">Inicio</a></li>
+                <li><a href="modelos.html" class="footer__menu">Modelos</a></li>
+                <li><a href="quienes_somos.html" class="footer__menu">¿Quiénes somos?</a></li>
+                <li><a href="consultas.html" class="footer__menu">Consultas</a></li>
+            </section>
+            <section>
+                <div class="newsletter__footer">
+                    <h3>Newsletter</h3>
+                    <form action="">
+                        <input type="email" placeholder="Email">
+                        <button type="submit">
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>   
+                    </form>
+                </div>
+            </section>
+        </ul>
+    </footer>
+</body>
+</html>
